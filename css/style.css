@@ -492,36 +492,54 @@ html {
   margin-top: 20px;
   justify-content: space-evenly;
   height: calc(100vh - 160px - 105px - 44px - 20px);
+  gap: 30px;
+}
+
+.sugestao-cards span{
+    text-transform: uppercase;
+    color: var(--cor-cinza);
+    letter-spacing: 2px;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 30px 0px 5px 0px;
+    
+    
 }
 
 .sugestao-card-item{
   box-shadow: 1px 1px 4px #999;
   border-radius: 4px;
   padding: 1em;
-  height: 400px;
+  height: 350px;
   width: min-content;
   transition: scale .3s;
   transition: .5s;
   overflow: hidden;
-
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  
   img{
-    width: 500px;
+    width: 380px;
   }
 
   div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
-  div button{
-    margin: 0;
-  }
 
   p {
-    margin-top: 20px;
+    margin-top: 60px
   }
 }
 
+.sugestao-card-item:hover{
+  scale: 1.1;
+}
+
 .sugestao-card-item-overflow {
-  height: 600px;
+  height: 550px;
 }
