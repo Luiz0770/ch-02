@@ -543,3 +543,37 @@ html {
 .sugestao-card-item-overflow {
   height: 550px;
 }
+
+/******************************************************************** VERIFICACAO IDADE  ********************************************************************/
+
+.age-container{
+  background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,.2)), url("../img/intro-img.jpg") center;
+}
+
+.grid{
+  display: grid;
+  place-items: center; /* Isso centraliza os itens horizontal e verticalmente */
+  height: 100vh; /* Isso faz com que o contêiner ocupe toda a altura da janela */
+}
+
+.glass-card{
+  width: 40%;
+  height: 60%;
+
+  backdrop-filter: blur(16px) saturate(189%);
+  -webkit-backdrop-filter: blur(16px) saturate(189%);
+  background-color: rgba(40, 36, 17, 0.63);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.glass-card h2{
+  font-size: 4vmin;
+  color: var(--color-pink);
+}
