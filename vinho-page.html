@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinheria Agnello</title>
+  <link rel="shortcut icon" href="./img/logo-branca.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="sobre">
+
+  <section class="top-bar-bg">
+    <div class="top-bar container">
+      <div>
+        <a href="https://www.whatsapp.com/" target="_blank"><img src="./img/icons/icon-wpp.svg" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/"><img src="./img/icons/icon-instagram.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"><img src="./img/icons/icon-facebook.svg" alt="Facebook"></a>
+      </div>
+      <h2>A essência dos bons momentos em cada gole.</h2>
+      <p>+55 11 99999-9999</p>
+    </div>
+  </section>
+
+  <div class="header-bg">
+    <header class="header container">
+      <a href="./index.html"><img src="./img/icons/logo-vermelha.svg" alt="Vinheria Agnello"></a>
+      <input class="barra-pesquisa" type="text" placeholder="O quê você precisa?">
+      <nav>
+        <ul>
+          <li><a href="./index.html#catalogo">Catálogo</a></li>
+          <li><a href="./sugestao.html">Sugestões</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <section class="vinho-detalhado container">
+    <img src="./img/vinho.jpg" alt="Vinho">
+    <div>
+      <h2>Carbenet Sauvignon</h2>
+      <p class="estoque">10 em estoque</p>
+      <span>R$ 320,00</span>
+      <div class="inputs">
+        <input type="number" id="quantidade-vinho" oninput="calcularCompra()">
+        <button class="add-carrinho" onclick="adicionarCarrinho()">Adicionar no Carrinho</button>
+        <p id="resultado-quantidade"></p>
+      </div>
+      <input class="cupom" type="text" placeholder="CUPOM" id="cupom">
+      <button class="validar-cupom" onclick="validarCupom()">Validar Cupom</button>
+      <p id="resultado-cupom"></p>
+      <h3>Descrição</h3>
+      <p class="descricao">O Cabernet Sauvignon é um vinho tinto clássico, originário de Bordeaux, conhecido por sua cor vermelha profunda e seus aromas de frutas escuras e especiarias. Encorpado e robusto, é perfeito para acompanhar carne vermelha grelhada ou queijos maturados. Um verdadeiro ícone da viticultura, celebrado por sua complexidade e elegância.</p>
+    </div>
+  </section>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/icons/logo-branca.svg" alt="Vinheria Agnello">
+      <nav>
+        <ul>
+          <li><a href="./index.html#catalogo">Catálogo</a></li>
+          <li><a href="./sugestao.html">Sugestões</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
